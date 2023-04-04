@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+.wrap{
+    width:100%;
+    margin:0 auto;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+.header_wrap{
+    width:100%;
+    padding:50px 0px;
+    background-color:#ffeeee;
+}
+
+/* header_menu */
+.header_menu{
+    width:96%;
+    margin:0 auto;
+    padding-bottom:30px;
+    display:flex;
+    justify-content:space-between;
+    position: relative; 
+}
+.header_menu h1{
+    width:10%;
+}
+.header_menu h1 h1 img{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* big_menu */
+.big_menu{
+    display:flex;
+}
+.big_menu>li{
+    margin-right:60px;
+    padding:40px;
+}
+
+.big_menu>li:last-child{
+    margin-right:0px;
+}
+.big_menu>li:hover .sub{
+    display:block;
+}
+
+/* small_menu */
+.small_menu{
+    display:flex;
+    padding:40px;
+}
+.small_menu>li{
+    margin-right:20px;
+}
+.small_menu>li:first-child{
+    color:gray;
+    width:75px;
+    height:35px;
+    font-size:20px;
+    border:3px solid #eaeaea;
+    border-radius:50px;
+    text-align:center;
+    line-height:30px;
+}
+.small_menu>li:last-child{
+    margin-right:0px;
+}
+
+/* short_menu_wrap */
+.short_menu_wrap{
+    position: absolute;
+    width:90%;
+    right: 0; 
+    top:30px;
+    display:none;
+    justify-content:flex-end;
+    z-index: 2;
+    background-color: #fff;
+}
+.short_menu{
+    cursor:pointer;
+}
+
+/* about_menu */
+.about_menu{
+    width:100%;
+    margin-right:60px;
+    display:none;
+}
+.about_menu.show {
+    display: block;
+}
+.about_menu>ul>li{
+    width:100%;
+    text-align:center;
+    font-size:25px;
+    padding:30px;
+    border-bottom:1px solid #eaeaea;
+}
+
+
+/* menu_color */
+.menu_color li a{
+    font-size:25px;
+}
+.menu_color>li:first-child a{
+    color:#66ccff;
+}
+.menu_color>li:nth-child(2) a{
+    color:#4acc99
+}
+.menu_color>li:nth-child(3) a{
+    color:#f96d8b;
+}
+.menu_color>li:nth-child(4) a{
+    color:#cf1cff;
+}
+
+
+
+/* sub */
+.sub{
+    display:none;
+}
+.sub li{
+    margin-top:20px;
+}
+.sub li a{
+    font-size:15px;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .header_menu{
+        background-color:transparent;
+    }
+    .big_menu{
+        display:none;
+    }
+    .small_menu{
+        display:none;
+    }
+    .short_menu_wrap{
+        display: flex;
+        width:90%;
+    }
+    .video_wrap{
+        display:none;
+    }
+}
+
+
+@media screen and (max-width:1199px) and (min-width:768px){
+    .short_menu_wrap{
+        display: flex;
+        width:80%;
+    }
+}
+    
+
+@media screen and (max-width:767px) {
+    .short_menu_wrap{
+        width:75%;
+    }
+    .menu_color>li>a{
+        font-size:20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
